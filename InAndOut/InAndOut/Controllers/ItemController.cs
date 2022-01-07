@@ -16,13 +16,10 @@ namespace InAndOut.Controllers
         {
             _db = db;
         }
-
         public IActionResult Index()
         {
-
-            IEnumerable<Item> objList = _db.Items;
-
-            return View(objList);
+            IEnumerable<Item> objectList = _db.Items;
+            return View(objectList);
         }
     }
 }
