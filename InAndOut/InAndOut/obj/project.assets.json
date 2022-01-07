@@ -741,11 +741,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\deniz.ozcelik\\source\\repos\\InAndOut\\InAndOut\\InAndOut.csproj",
+      "projectUniqueName": "C:\\Users\\deniz.ozcelik\\Documents\\GitHub\\InAndOut\\InAndOut\\InAndOut\\InAndOut.csproj",
       "projectName": "InAndOut",
-      "projectPath": "C:\\Users\\deniz.ozcelik\\source\\repos\\InAndOut\\InAndOut\\InAndOut.csproj",
+      "projectPath": "C:\\Users\\deniz.ozcelik\\Documents\\GitHub\\InAndOut\\InAndOut\\InAndOut\\InAndOut.csproj",
       "packagesPath": "C:\\Users\\deniz.ozcelik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\deniz.ozcelik\\source\\repos\\InAndOut\\InAndOut\\obj\\",
+      "outputPath": "C:\\Users\\deniz.ozcelik\\Documents\\GitHub\\InAndOut\\InAndOut\\InAndOut\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\deniz.ozcelik\\AppData\\Roaming\\NuGet\\NuGet.Config",
