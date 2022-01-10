@@ -790,3 +790,5 @@ C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\InAndOut.genruntimeconfig.cache
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\InAndOut.csproj.AssemblyReference.cache
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\Item\Create.cshtml.g.cs
+C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\Expense\Create.cshtml.g.cs
+C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\Expense\Index.cshtml.g.cs

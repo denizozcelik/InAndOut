@@ -21,22 +21,5 @@ namespace InAndOut.Controllers
             IEnumerable<Item> objectList = _db.Items;
             return View(objectList);
         }
-
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Create(Item obj)
-        {
-            _db.Items.Add(obj);
-            _db.SaveChanges();
-
-            return RedirectToAction("Index");
-
-        }
-
     }
 }
