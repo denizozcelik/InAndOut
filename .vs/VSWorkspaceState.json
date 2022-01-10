@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\InAndOut",
+    "\\InAndOut\\InAndOut",
+    "\\InAndOut\\InAndOut\\bin",
+    "\\InAndOut\\InAndOut\\bin\\Debug",
+    "\\InAndOut\\InAndOut\\bin\\Debug\\net5.0",
+    "\\InAndOut\\InAndOut\\Views",
+    "\\InAndOut\\InAndOut\\Views\\Home",
+    "\\InAndOut\\InAndOut\\Views\\Item",
+    "\\InAndOut\\InAndOut\\Views\\Shared"
+  ],
+  "SelectedNode": "\\InAndOut\\InAndOut\\Controllers\\ItemController.cs",
+  "PreviewInSolutionExplorer": false
+}
