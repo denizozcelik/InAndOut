@@ -2,9 +2,9 @@
 
 <form method="post" asp-action="Create">
     <div class="border p-3">
-        @*<div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
+
         <div class="form-group row">
-            <h2 class="text-black-50 pl-3">Add Expense</h2> 
+            <h2 class="text-black-50 pl-3">Add Expense</h2>
         </div>
         <div class="row">
             <div class="col-12">
@@ -29,7 +29,7 @@
                         <span asp-validation-for="Expense.Amount" class="text-danger"></span>
                     </div>
                     <div class="col-4">
-                        <select asp-for="Expense.ExpenseTypeId" asp-items="@Model.TypeDropDown" class="form-control" >
+                        <select asp-for="Expense.ExpenseTypeId" asp-items="@Model.TypeDropDown" class="form-control">
                             <option selected>--Select Expense Type--</option>
                         </select>
                         <span asp-validation-for="Expense.ExpenseTypeId" class="text-danger"></span>
@@ -51,7 +51,8 @@
     </div>
 </form>
 
-@section Scripts{ 
-    @{ <partial name="_ValidationScriptsPartial" />}
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
 }
-

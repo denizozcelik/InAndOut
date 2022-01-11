@@ -1,10 +1,7 @@
 ﻿using InAndOut.Data;
 using InAndOut.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace InAndOut.Controllers
 {
@@ -22,7 +19,7 @@ namespace InAndOut.Controllers
         {
             IEnumerable<ExpenseType> objList = _db.ExpenseTypes;
             return View(objList);
-            
+
         }
 
         // GET-Create
@@ -43,20 +40,20 @@ namespace InAndOut.Controllers
                 return RedirectToAction("Index");
             }
             return View(obj);
-           
+
         }
 
 
         // GET Delete
         public IActionResult Delete(int? id)
         {
-           
-            if (id == null || id==0)
+
+            if (id == null || id == 0)
             {
                 return NotFound();
             }
             var obj = _db.ExpenseTypes.Find(id);
-            if(obj == null)
+            if (obj == null)
             {
                 return NotFound();
             }
@@ -70,11 +67,11 @@ namespace InAndOut.Controllers
         public IActionResult DeletePost(int? id)
         {
             var obj = _db.ExpenseTypes.Find(id);
-            if(obj == null)
+            if (obj == null)
             {
                 return NotFound();
             }
-           
+
             _db.ExpenseTypes.Remove(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");

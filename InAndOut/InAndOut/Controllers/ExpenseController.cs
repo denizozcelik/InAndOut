@@ -3,10 +3,8 @@ using InAndOut.Models;
 using InAndOut.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace InAndOut.Controllers
 {
@@ -24,26 +22,18 @@ namespace InAndOut.Controllers
         {
             IEnumerable<Expense> objList = _db.Expenses;
 
-            foreach(var obj in objList)
+            foreach (var obj in objList)
             {
                 obj.ExpenseType = _db.ExpenseTypes.FirstOrDefault(u => u.Id == obj.ExpenseTypeId);
             }
 
             return View(objList);
-            
+
         }
 
         // GET-Create
         public IActionResult Create()
         {
-            //IEnumerable<SelectListItem> TypeDropDown = _db.ExpenseTypes.Select(i => new SelectListItem
-            //{
-            //    Text = i.Name,
-            //    Value = i.Id.ToString()
-            //});
-
-            //ViewBag.TypeDropDown = TypeDropDown;
-
             ExpenseVM expenseVM = new ExpenseVM()
             {
                 Expense = new Expense(),
@@ -64,26 +54,25 @@ namespace InAndOut.Controllers
         {
             if (ModelState.IsValid)
             {
-                //obj.ExpenseTypeId = 1;
                 _db.Expenses.Add(obj.Expense);
                 _db.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(obj);
-           
+
         }
 
 
         // GET Delete
         public IActionResult Delete(int? id)
         {
-           
-            if (id == null || id==0)
+
+            if (id == null || id == 0)
             {
                 return NotFound();
             }
             var obj = _db.Expenses.Find(id);
-            if(obj == null)
+            if (obj == null)
             {
                 return NotFound();
             }
@@ -97,11 +86,11 @@ namespace InAndOut.Controllers
         public IActionResult DeletePost(int? id)
         {
             var obj = _db.Expenses.Find(id);
-            if(obj == null)
+            if (obj == null)
             {
                 return NotFound();
             }
-           
+
             _db.Expenses.Remove(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");
