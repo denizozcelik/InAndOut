@@ -6,13 +6,12 @@
             <h2 class="text-primary">Borrowed Items List</h2>
         </div>
         <div class="col-6 text-right">
-            <a  asp-controller="Item" asp-action="Create" class="btn btn-primary"> Create new Item </a>
+            <a asp-controller="Item" asp-action="Create" class="btn btn-primary">Create new Item</a>
         </div>
     </div>
     <br />
 
-
-    @if (Model.Count() > 0)
+    @if(Model.Count() > 0)
     {
         <table class="table table-bordered table-striped" style="width:100%">
             <thead>
@@ -29,7 +28,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var item in Model)
+                @foreach(var item in Model)
                 {
                     <tr>
                         <td width="30%">@item.ItemName</td>
@@ -38,8 +37,7 @@
                     </tr>
                 }
             </tbody>
-
-        </table>
+        </table> 
     }
     else
     {
@@ -47,3 +45,4 @@
     }
 
 </div>
+
