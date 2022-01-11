@@ -1,9 +1,10 @@
 ﻿using InAndOut.Data;
 using InAndOut.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace InAndOut.Controllers
 {
@@ -21,16 +22,16 @@ namespace InAndOut.Controllers
         {
             IEnumerable<ExpenseType> objList = _db.ExpenseTypes;
             return View(objList);
-
+            
         }
 
-        // Create - Get
+        // GET-Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // Create - Post
+        // POST-Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(ExpenseType obj)
@@ -42,42 +43,48 @@ namespace InAndOut.Controllers
                 return RedirectToAction("Index");
             }
             return View(obj);
-
+           
         }
 
-        // Delete - Get
+
+        // GET Delete
         public IActionResult Delete(int? id)
         {
-            if (id == null || id == 0)
+           
+            if (id == null || id==0)
             {
                 return NotFound();
             }
             var obj = _db.ExpenseTypes.Find(id);
-            if (obj == null)
+            if(obj == null)
             {
                 return NotFound();
             }
             return View(obj);
+
         }
 
-        // Delete - Post
+        // POST Delete
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult DeletePost(int? id)
         {
             var obj = _db.ExpenseTypes.Find(id);
-            if (obj == null)
+            if(obj == null)
             {
                 return NotFound();
             }
+           
             _db.ExpenseTypes.Remove(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");
+
         }
 
-        // Update - Get
+        // GET Update
         public IActionResult Update(int? id)
         {
+
             if (id == null || id == 0)
             {
                 return NotFound();
@@ -88,9 +95,10 @@ namespace InAndOut.Controllers
                 return NotFound();
             }
             return View(obj);
+
         }
 
-        // Update - Post
+        // POST UPDATE
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Update(ExpenseType obj)

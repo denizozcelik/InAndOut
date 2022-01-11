@@ -415,9 +415,14 @@ C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\InAndOut.TagHelpers.output.cache
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\InAndOut.RazorCoreGenerate.cache
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\Appointment\Index.cshtml.g.cs
+C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\ExpenseType\Create.cshtml.g.cs
+C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\ExpenseType\Delete.cshtml.g.cs
+C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\ExpenseType\Index.cshtml.g.cs
+C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\ExpenseType\Update.cshtml.g.cs
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\Expense\Create.cshtml.g.cs
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\Expense\Delete.cshtml.g.cs
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\Expense\Index.cshtml.g.cs
+C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\Expense\Update.cshtml.g.cs
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\Item\Create.cshtml.g.cs
@@ -435,8 +440,3 @@ C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\ref\InAndOut.dll
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\InAndOut.pdb
 C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\InAndOut.genruntimeconfig.cache
-C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\Expense\Update.cshtml.g.cs
-C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\ExpenseType\Create.cshtml.g.cs
-C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\ExpenseType\Delete.cshtml.g.cs
-C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\ExpenseType\Index.cshtml.g.cs
-C:\Users\deniz.ozcelik\Documents\GitHub\InAndOut\InAndOut\InAndOut\obj\Debug\net5.0\Razor\Views\ExpenseType\Update.cshtml.g.cs
