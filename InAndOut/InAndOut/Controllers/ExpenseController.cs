@@ -1,7 +1,10 @@
 ﻿using InAndOut.Data;
 using InAndOut.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace InAndOut.Controllers
 {
@@ -19,16 +22,16 @@ namespace InAndOut.Controllers
         {
             IEnumerable<Expense> objList = _db.Expenses;
             return View(objList);
-
+            
         }
 
-        // Create - Get
+        // GET-Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // Create - Post
+        // POST-Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Expense obj)
@@ -40,13 +43,13 @@ namespace InAndOut.Controllers
                 return RedirectToAction("Index");
             }
             return View(obj);
-
+           
         }
 
-        // Delete - Get
+        // GET-Delete
         public IActionResult Delete(int? id)
         {
-            if (id == null || id == 0)
+            if(id == null || id == 0)
             {
                 return NotFound();
             }
@@ -58,49 +61,19 @@ namespace InAndOut.Controllers
             return View(obj);
         }
 
-        // Delete - Post
+        // POST-Delete
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult DeletePost(int? id)
         {
             var obj = _db.Expenses.Find(id);
-            if (obj == null)
+            if(obj == null)
             {
                 return NotFound();
             }
             _db.Expenses.Remove(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");
-        }
-
-        // Update - Get
-        public IActionResult Update(int? id)
-        {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
-            var obj = _db.Expenses.Find(id);
-            if (obj == null)
-            {
-                return NotFound();
-            }
-            return View(obj);
-        }
-
-        // Update - Post
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Update(Expense obj)
-        {
-            if (ModelState.IsValid)
-            {
-                _db.Expenses.Update(obj);
-                _db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(obj);
-
         }
     }
 }
