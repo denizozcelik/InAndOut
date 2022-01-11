@@ -19,7 +19,7 @@ namespace InAndOut.Controllers
         {
             IEnumerable<Expense> objList = _db.Expenses;
             return View(objList);
-            
+
         }
 
         // Create - Get
@@ -40,13 +40,13 @@ namespace InAndOut.Controllers
                 return RedirectToAction("Index");
             }
             return View(obj);
-           
+
         }
 
         // Delete - Get
         public IActionResult Delete(int? id)
         {
-            if(id == null || id == 0)
+            if (id == null || id == 0)
             {
                 return NotFound();
             }
@@ -64,13 +64,43 @@ namespace InAndOut.Controllers
         public IActionResult DeletePost(int? id)
         {
             var obj = _db.Expenses.Find(id);
-            if(obj == null)
+            if (obj == null)
             {
                 return NotFound();
             }
             _db.Expenses.Remove(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        // Update - Get
+        public IActionResult Update(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            var obj = _db.Expenses.Find(id);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+        }
+
+        // Update - Post
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Update(Expense obj)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Expenses.Update(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(obj);
+
         }
     }
 }
