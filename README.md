@@ -1,8 +1,8 @@
 
-ASP NET Core MVC 5
-Forms and validations in ASP NET CORE MVC
-ViewModels, ViewBag, ViewData
-Setup Database Connection Using Entity Framework Core
+ASP NET Core MVC 5 ,
+Forms and validations in ASP NET CORE MVC , 
+ViewModels, ViewBag, ViewData , 
+Setup Database Connection Using Entity Framework Core , 
 
 C#
 SQL
